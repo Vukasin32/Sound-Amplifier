@@ -8,3 +8,4 @@ Technologies that were used:
 - Python
 - OpenCV
 - Mediapipe
+- Pycaw
