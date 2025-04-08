@@ -1,4 +1,4 @@
-# Sound-Amplifier
+# Sound-Controller
 Computer vision app that controls speakers volume via hand command given from web cam.
 
 Implemented command is done with thumb and index finger. If those fingers are completely separated speaker is set to 100% of its strength. If they are pressed together one on another speaker is set to 0% of its strength. 
