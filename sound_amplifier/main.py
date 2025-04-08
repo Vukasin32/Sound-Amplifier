@@ -3,8 +3,7 @@ from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 
 devices = AudioUtilities.GetSpeakers()
 
-interface = devices.Activate(
-    IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
+interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 
 volume = interface.QueryInterface(IAudioEndpointVolume)  # Object that can adjust speakers volume
 
@@ -60,8 +59,7 @@ while True:
             y_thumb = int(y_[4] * h)
             y_index = int(y_[8] * h)
 
-            dist = (x_thumb - x_index) ** 2 + (
-                        y_thumb - y_index) ** 2  # Squared Euclidean distance between thumb and index
+            dist = (x_thumb - x_index) ** 2 + (y_thumb - y_index) ** 2  # Squared Euclidean distance between thumb and index
 
             # Key part of having robust controller is finding relative measure of distance
             # between thumb and index
